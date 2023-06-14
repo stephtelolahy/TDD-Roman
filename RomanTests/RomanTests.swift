@@ -18,6 +18,17 @@ final class RomanTests: XCTestCase {
         let result = converter.convert(1)
 
         // Then
-        XCTAssertEqual(result, "I")
+        XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
+    }
+
+    func testConversionForTwo() {
+        // Given
+        let converter = Converter()
+
+        // When
+        let result = converter.convert(2)
+
+        // Then
+        XCTAssertEqual(result, "II", "Conversion for 2 is incorrect")
     }
 }
