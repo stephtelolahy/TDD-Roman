@@ -10,58 +10,25 @@ import Roman
 
 final class RomanTests: XCTestCase {
 
-    func testConversionForOne() {
+    private let args: [(Int, String)] = [
+        (1, "I"),
+        (2, "II"),
+        (5, "V"),
+        (6, "VI"),
+        (10, "X")
+    ]
+
+    func testConversion() {
         // Given
         let converter = Converter()
 
-        // When
-        let result = converter.convert(1)
+        args.forEach { number, expected in
 
-        // Then
-        XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
-    }
+            // When
+            let result = converter.convert(number)
 
-    func testConversionForTwo() {
-        // Given
-        let converter = Converter()
-
-        // When
-        let result = converter.convert(2)
-
-        // Then
-        XCTAssertEqual(result, "II", "Conversion for 2 is incorrect")
-    }
-
-    func testConversionForFive() {
-        // Given
-        let converter = Converter()
-
-        // When
-        let result = converter.convert(5)
-
-        // Then
-        XCTAssertEqual(result, "V", "Conversion for 5 is incorrect")
-    }
-
-    func testConversionForSix() {
-        // Given
-        let converter = Converter()
-
-        // When
-        let result = converter.convert(6)
-
-        // Then
-        XCTAssertEqual(result, "VI", "Conversion for 6 is incorrect")
-    }
-
-    func testConversionForTen() {
-        // Given
-        let converter = Converter()
-
-        // When
-        let result = converter.convert(10)
-
-        // Then
-        XCTAssertEqual(result, "X", "Conversion for 10 is incorrect")
+            // Then
+            XCTAssertEqual(result, expected, "Conversion for \(number) is incorrect")
+        }
     }
 }
