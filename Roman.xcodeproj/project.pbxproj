@@ -36,6 +36,7 @@
 		2646A3562A3A61830052E9E6 /* RomanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2646A35A2A3A61830052E9E6 /* RomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanTests.swift; sourceTree = "<group>"; };
 		2646A3732A3A62890052E9E6 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		26F0E02D2A3A652600C2F904 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		2646A33C2A3A61820052E9E6 = {
 			isa = PBXGroup;
 			children = (
+				26F0E02D2A3A652600C2F904 /* README.md */,
 				2646A3472A3A61820052E9E6 /* Roman */,
 				2646A3592A3A61830052E9E6 /* RomanTests */,
 				2646A3462A3A61820052E9E6 /* Products */,

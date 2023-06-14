@@ -10,6 +10,6 @@ public class Converter {
     public init() {}
 
     public func convert(_ number: Int) -> String {
-        ""
+        "I"
     }
 }
