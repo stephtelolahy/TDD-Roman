@@ -10,20 +10,22 @@ import Roman
 
 final class RomanTests: XCTestCase {
 
-    private let args: [(Int, String)] = [
+    private let examples: [(Int, String)] = [
         (1, "I"),
         (2, "II"),
         (5, "V"),
         (6, "VI"),
         (10, "X"),
-        (20, "XX")
+        (20, "XX"),
+        (21, "XXI"),
+        (4, "IV")
     ]
 
-    func testConversionForAllCases() {
+    func testConversion() {
         // Given
         let converter = Converter()
 
-        args.forEach { number, expected in
+        examples.forEach { number, expected in
 
             // When
             let result = converter.convert(number)

@@ -19,6 +19,10 @@ public class Converter {
             return "V" + convert(number - 5)
         }
 
+        if number == 4 {
+            return "IV"
+        }
+
         return String(repeating: "I", count: number)
     }
 }
