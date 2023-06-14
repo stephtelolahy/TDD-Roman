@@ -15,10 +15,11 @@ final class RomanTests: XCTestCase {
         (2, "II"),
         (5, "V"),
         (6, "VI"),
-        (10, "X")
+        (10, "X"),
+        (20, "XX")
     ]
 
-    func testConversion() {
+    func testConversionForAllCases() {
         // Given
         let converter = Converter()
 
