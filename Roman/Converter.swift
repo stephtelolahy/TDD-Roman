@@ -10,6 +10,10 @@ public class Converter {
     public init() {}
 
     public func convert(_ number: Int) -> String {
-        String(repeating: "I", count: number)
+        if number >= 5 {
+            return "V" + convert(number - 5)
+        }
+
+        return String(repeating: "I", count: number)
     }
 }

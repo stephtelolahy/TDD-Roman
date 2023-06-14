@@ -26,3 +26,10 @@ Examples
  500 ➔ D
  
 1000 ➔ M
+
+
+### Test sequences
+- 1
+- 2
+- 5
+- 6

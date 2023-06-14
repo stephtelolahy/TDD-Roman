@@ -31,4 +31,26 @@ final class RomanTests: XCTestCase {
         // Then
         XCTAssertEqual(result, "II", "Conversion for 2 is incorrect")
     }
+
+    func testConversionForFive() {
+        // Given
+        let converter = Converter()
+
+        // When
+        let result = converter.convert(5)
+
+        // Then
+        XCTAssertEqual(result, "V", "Conversion for 5 is incorrect")
+    }
+
+    func testConversionForSix() {
+        // Given
+        let converter = Converter()
+
+        // When
+        let result = converter.convert(6)
+
+        // Then
+        XCTAssertEqual(result, "VI", "Conversion for 6 is incorrect")
+    }
 }
