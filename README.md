@@ -30,6 +30,8 @@ Examples
 
 ### Test sequences
 - 1
-- 2
+- 2 (3)
 - 5
-- 6
+- 6 (7, 8)
+- 10
+

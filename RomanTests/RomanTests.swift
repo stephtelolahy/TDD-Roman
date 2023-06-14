@@ -53,4 +53,15 @@ final class RomanTests: XCTestCase {
         // Then
         XCTAssertEqual(result, "VI", "Conversion for 6 is incorrect")
     }
+
+    func testConversionForTen() {
+        // Given
+        let converter = Converter()
+
+        // When
+        let result = converter.convert(10)
+
+        // Then
+        XCTAssertEqual(result, "X", "Conversion for 10 is incorrect")
+    }
 }
