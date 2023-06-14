@@ -18,7 +18,8 @@ final class RomanTests: XCTestCase {
         (10, "X"),
         (20, "XX"),
         (21, "XXI"),
-        (4, "IV")
+        (4, "IV"),
+        (9, "IX"),
     ]
 
     func testConversion() {

@@ -15,6 +15,10 @@ public class Converter {
             return "X" + convert(number - 10)
         }
 
+        if number == 9 {
+            return "IX"
+        }
+
         if number >= 5 {
             return "V" + convert(number - 5)
         }
@@ -23,6 +27,10 @@ public class Converter {
             return "IV"
         }
 
-        return String(repeating: "I", count: number)
+        if number >= 1 {
+            return "I" + convert(number - 1)
+        }
+
+        return ""
     }
 }
