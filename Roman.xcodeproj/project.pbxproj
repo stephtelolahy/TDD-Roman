@@ -12,19 +12,12 @@
 		2646A34D2A3A61830052E9E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2646A34C2A3A61830052E9E6 /* Assets.xcassets */; };
 		2646A3512A3A61830052E9E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2646A3502A3A61830052E9E6 /* Preview Assets.xcassets */; };
 		2646A35B2A3A61830052E9E6 /* RomanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646A35A2A3A61830052E9E6 /* RomanTests.swift */; };
-		2646A3652A3A61830052E9E6 /* RomanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646A3642A3A61830052E9E6 /* RomanUITests.swift */; };
-		2646A3672A3A61830052E9E6 /* RomanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646A3662A3A61830052E9E6 /* RomanUITestsLaunchTests.swift */; };
+		2646A3742A3A62890052E9E6 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646A3732A3A62890052E9E6 /* Converter.swift */; };
+		26F0E02C2A3A636400C2F904 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646A3732A3A62890052E9E6 /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2646A3572A3A61830052E9E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2646A33D2A3A61820052E9E6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2646A3442A3A61820052E9E6;
-			remoteInfo = Roman;
-		};
-		2646A3612A3A61830052E9E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2646A33D2A3A61820052E9E6 /* Project object */;
 			proxyType = 1;
@@ -42,9 +35,7 @@
 		2646A3502A3A61830052E9E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2646A3562A3A61830052E9E6 /* RomanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2646A35A2A3A61830052E9E6 /* RomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanTests.swift; sourceTree = "<group>"; };
-		2646A3602A3A61830052E9E6 /* RomanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2646A3642A3A61830052E9E6 /* RomanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanUITests.swift; sourceTree = "<group>"; };
-		2646A3662A3A61830052E9E6 /* RomanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2646A3732A3A62890052E9E6 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2646A35D2A3A61830052E9E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +61,6 @@
 			children = (
 				2646A3472A3A61820052E9E6 /* Roman */,
 				2646A3592A3A61830052E9E6 /* RomanTests */,
-				2646A3632A3A61830052E9E6 /* RomanUITests */,
 				2646A3462A3A61820052E9E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +70,6 @@
 			children = (
 				2646A3452A3A61820052E9E6 /* Roman.app */,
 				2646A3562A3A61830052E9E6 /* RomanTests.xctest */,
-				2646A3602A3A61830052E9E6 /* RomanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +77,7 @@
 		2646A3472A3A61820052E9E6 /* Roman */ = {
 			isa = PBXGroup;
 			children = (
+				2646A3732A3A62890052E9E6 /* Converter.swift */,
 				2646A3482A3A61820052E9E6 /* RomanApp.swift */,
 				2646A34A2A3A61820052E9E6 /* ContentView.swift */,
 				2646A34C2A3A61830052E9E6 /* Assets.xcassets */,
@@ -118,15 +101,6 @@
 				2646A35A2A3A61830052E9E6 /* RomanTests.swift */,
 			);
 			path = RomanTests;
-			sourceTree = "<group>";
-		};
-		2646A3632A3A61830052E9E6 /* RomanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2646A3642A3A61830052E9E6 /* RomanUITests.swift */,
-				2646A3662A3A61830052E9E6 /* RomanUITestsLaunchTests.swift */,
-			);
-			path = RomanUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,24 +141,6 @@
 			productReference = 2646A3562A3A61830052E9E6 /* RomanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2646A35F2A3A61830052E9E6 /* RomanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2646A3702A3A61830052E9E6 /* Build configuration list for PBXNativeTarget "RomanUITests" */;
-			buildPhases = (
-				2646A35C2A3A61830052E9E6 /* Sources */,
-				2646A35D2A3A61830052E9E6 /* Frameworks */,
-				2646A35E2A3A61830052E9E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2646A3622A3A61830052E9E6 /* PBXTargetDependency */,
-			);
-			name = RomanUITests;
-			productName = RomanUITests;
-			productReference = 2646A3602A3A61830052E9E6 /* RomanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,11 +156,6 @@
 					};
 					2646A3552A3A61830052E9E6 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 2646A3442A3A61820052E9E6;
-					};
-					2646A35F2A3A61830052E9E6 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 2646A3442A3A61820052E9E6;
 					};
 				};
 			};
@@ -223,7 +174,6 @@
 			targets = (
 				2646A3442A3A61820052E9E6 /* Roman */,
 				2646A3552A3A61830052E9E6 /* RomanTests */,
-				2646A35F2A3A61830052E9E6 /* RomanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,13 +195,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2646A35E2A3A61830052E9E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2646A34B2A3A61820052E9E6 /* ContentView.swift in Sources */,
+				2646A3742A3A62890052E9E6 /* Converter.swift in Sources */,
 				2646A3492A3A61820052E9E6 /* RomanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,16 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F0E02C2A3A636400C2F904 /* Converter.swift in Sources */,
 				2646A35B2A3A61830052E9E6 /* RomanTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2646A35C2A3A61830052E9E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2646A3672A3A61830052E9E6 /* RomanUITestsLaunchTests.swift in Sources */,
-				2646A3652A3A61830052E9E6 /* RomanUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +224,6 @@
 			isa = PBXTargetDependency;
 			target = 2646A3442A3A61820052E9E6 /* Roman */;
 			targetProxy = 2646A3572A3A61830052E9E6 /* PBXContainerItemProxy */;
-		};
-		2646A3622A3A61830052E9E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2646A3442A3A61820052E9E6 /* Roman */;
-			targetProxy = 2646A3612A3A61830052E9E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,7 +418,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -501,7 +431,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roman";
 			};
 			name = Debug;
 		};
@@ -509,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -523,49 +451,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roman";
-			};
-			name = Release;
-		};
-		2646A3712A3A61830052E9E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.creativegames.RomanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Roman;
-			};
-			name = Debug;
-		};
-		2646A3722A3A61830052E9E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.creativegames.RomanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Roman;
 			};
 			name = Release;
 		};
@@ -595,15 +480,6 @@
 			buildConfigurations = (
 				2646A36E2A3A61830052E9E6 /* Debug */,
 				2646A36F2A3A61830052E9E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2646A3702A3A61830052E9E6 /* Build configuration list for PBXNativeTarget "RomanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2646A3712A3A61830052E9E6 /* Debug */,
-				2646A3722A3A61830052E9E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
