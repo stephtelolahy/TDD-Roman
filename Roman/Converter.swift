@@ -9,28 +9,25 @@ public class Converter {
 
     public init() {}
 
+
+    private let romanSymbols: [(number: Int, symbol: String)] = [
+        (1000, "M"),
+        (500, "D"),
+        (100, "C"),
+        (50, "L"),
+        (10, "X"),
+        (9, "IX"),
+        (5, "V"),
+        (4, "IV"),
+        (1, "I"),
+    ]
+
     public func convert(_ number: Int) -> String {
-
-        if number >= 10 {
-            return "X" + convert(number - 10)
+        for element in romanSymbols {
+            if number >= element.number {
+                return element.symbol + convert(number - element.number)
+            }
         }
-
-        if number == 9 {
-            return "IX"
-        }
-
-        if number >= 5 {
-            return "V" + convert(number - 5)
-        }
-
-        if number == 4 {
-            return "IV"
-        }
-
-        if number >= 1 {
-            return "I" + convert(number - 1)
-        }
-
         return ""
     }
 }

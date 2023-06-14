@@ -20,6 +20,12 @@ final class RomanTests: XCTestCase {
         (21, "XXI"),
         (4, "IV"),
         (9, "IX"),
+        (0, ""),
+        (50, "L"),
+        (100, "C"),
+        (500, "D"),
+        (1000, "M"),
+        (2023, "MMXXIII")
     ]
 
     func testConversion() {
